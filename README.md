@@ -1,2 +1,1 @@
 # SchoolSuggestionsWebsite
-Website designet espescially 

@@ -25,9 +25,8 @@ $class = $_POST['class'];
 $mail = $_POST['mail'];
 
 if (empty($suggestion)){
-    echo "Предложението е задължитело поле!";
-}
-else{
+    include "indexErr.php";
+}else{
 // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -42,7 +41,7 @@ else{
 VALUES (NULL, '$suggestion','$fName','$lName','$mail','$grade','$class')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Предложението ви беше получено.";
+        include 'compleate.php';
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

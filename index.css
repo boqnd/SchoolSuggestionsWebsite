@@ -72,4 +72,11 @@ body{
     background-color: #FEFFD9;
 }
 
+#suggestionErr{
+    border: red solid 1.5px;
+}
+
+#errLabel{
+    color: red;
+}
 
